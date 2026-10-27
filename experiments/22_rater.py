@@ -14,7 +14,8 @@
 #
 # Benchmark: Experiment 20 (key 20_blend), recomputed on data_new/ outer splits.
 # Keep criterion: mean RMSE < 2.90.
-# Why not the usual rule of README 3.2 (beat the previous model on the mean and on 4 of 5
+# Why not the usual rule of the report (report/rapport_SPS.pdf), section 3.2
+# (beat the previous model on the mean and on 4 of 5
 # folds): the benchmark, experiment 20, was fitted on the first version of the files, so its
 # score is not comparable, and only a model built for the current files could be submitted.
 # The specification of this experiment therefore set 2.90 as a safety threshold that only
@@ -26,8 +27,8 @@
 # **Run:** `python experiments/22_rater.py`
 # (Windows: `.venv\Scripts\python.exe -X utf8 -u experiments/22_rater.py`).
 # Reads data_new/ (current files, path written in the code), data/ (first version of the
-# files) for a diagnostic, and audit/oof_20.csv; needs the Skore key (.skore), see README, How
-# to run.
+# files) for a diagnostic, and audit/oof_20.csv; needs the Skore key (.skore), see the report
+# (report/rapport_SPS.pdf), How to run.
 # `SMOKE_TEST=1`: 10 % of the patients, 2 folds, nothing saved or pushed (no Skore key needed).
 
 # %%

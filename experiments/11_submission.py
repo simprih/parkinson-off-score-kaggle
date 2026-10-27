@@ -13,11 +13,11 @@
 # **Key:** 11_submission  |  **Date:** 2026-10-09  |  **Decision:** Kaggle submission file of 11_B
 # **Results:** holdout (20 % of patients) 3.65 (Skore report `11_submission_B_holdout`); no CV,
 # the pipeline is the one scored in 11_leakage_fix.py.
-# **Skore Hub:** report key `11_submission_B_holdout` (id not listed in the README).
+# **Skore Hub:** report key `11_submission_B_holdout` (id not listed in the report).
 # **Run:** `python experiments/11_submission.py`
 # (Windows: `.venv\Scripts\python.exe -X utf8 -u experiments/11_submission.py`).
 # Reads data/ (first version of the files, before 9 October); needs the Skore key (.skore),
-# see README, How to run.
+# see the report (report/rapport_SPS.pdf), How to run.
 # A built-in check on 8 % of the patients runs first; `SMOKE_TEST=1` only skips the Skore report.
 
 # %%

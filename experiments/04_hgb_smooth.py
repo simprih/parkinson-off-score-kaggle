@@ -5,11 +5,11 @@
 # **Idea:** Per-patient linear smoothing of 03 predictions (PatientSmoothedRegressor).
 # **CV (GroupKFold 5):** 4.19
 # Smoothing the per-patient trajectory reduces visit-level noise slightly.
-# **Skore Hub:** report key `04_hgb_smooth` (id not listed in the README).
+# **Skore Hub:** report key `04_hgb_smooth` (id not listed in the report).
 # **Run:** `python experiments/04_hgb_smooth.py`
 # (Windows: `.venv\Scripts\python.exe -X utf8 -u experiments/04_hgb_smooth.py`).
 # Reads data/ (first version of the files, before 9 October); needs the Skore key (.skore),
-# see README, How to run.
+# see the report (report/rapport_SPS.pdf), How to run.
 
 # %%
 from pathlib import Path

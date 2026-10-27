@@ -51,7 +51,7 @@
 #     .venv\Scripts\python.exe -X utf8 -u experiments/25_blend.py <step>
 #     python experiments/25_blend.py <step>    (macOS / Linux)
 #
-# Setup (Python version, packages, data, Skore key): README, section How to run.
+# Setup (Python version, packages, data, Skore key): report (report/rapport_SPS.pdf), section How to run.
 #
 # Steps:
 # * ``smoke``  — quick sanity check on 10 % of patients.

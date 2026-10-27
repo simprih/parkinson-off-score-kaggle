@@ -21,7 +21,7 @@
 # **Run:** `python experiments/20_blend.py`
 # (Windows: `.venv\Scripts\python.exe -X utf8 -u experiments/20_blend.py`).
 # Reads data/ (first version of the files, before 9 October), audit/oof_19.csv and
-# submissions/19_likelihood.csv; needs the Skore key (.skore), see README, How to run.
+# submissions/19_likelihood.csv; needs the Skore key (.skore), see the report (report/rapport_SPS.pdf), How to run.
 # `SMOKE_TEST=1`: 10 % of the patients, 2 folds, nothing saved or pushed (no Skore key needed).
 
 # %%

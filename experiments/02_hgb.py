@@ -5,11 +5,11 @@
 # **Idea:** HGB on raw columns, first patient-honest grouped CV (GroupKFold 5).
 # **CV (GroupKFold 5):** 7.36
 # First trained model; establishes that HGB with native NaN handling beats the mean.
-# **Skore Hub:** report key `02_hgb` (id not listed in the README).
+# **Skore Hub:** report key `02_hgb` (id not listed in the report).
 # **Run:** `python experiments/02_hgb.py`
 # (Windows: `.venv\Scripts\python.exe -X utf8 -u experiments/02_hgb.py`).
 # Reads data/ (first version of the files, before 9 October); needs the Skore key (.skore),
-# see README, How to run.
+# see the report (report/rapport_SPS.pdf), How to run.
 
 # %%
 from pathlib import Path

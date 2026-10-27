@@ -5,11 +5,11 @@
 # **Idea:** Mean prediction — always predicts the training average (DummyRegressor).
 # **CV (GroupKFold 5):** 16.48
 # Establishes the RMSE floor; any real model must beat this score.
-# **Skore Hub:** report key `01_dummy` (id not listed in the README).
+# **Skore Hub:** report key `01_dummy` (id not listed in the report).
 # **Run:** `python experiments/01_dummy.py`
 # (Windows: `.venv\Scripts\python.exe -X utf8 -u experiments/01_dummy.py`).
 # Reads data/ (first version of the files, before 9 October); needs the Skore key (.skore),
-# see README, How to run.
+# see the report (report/rapport_SPS.pdf), How to run.
 
 # %%
 from pathlib import Path

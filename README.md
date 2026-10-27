@@ -6,7 +6,7 @@
 
 **17th of 294 teams (top 6 %) on the private leaderboard** of the Kaggle competition `bobathon-esilv`, with an RMSE of **2.43** against 16.48 for the reference (a constant prediction), and **up 7 places** from the public to the private leaderboard.
 
-**[Full report (Markdown)](REPORT.md)** · **[PDF](report/rapport_SPS.pdf)** · **[🎥 5-minute video presentation](https://youtu.be/-38HqgtiEek)**
+**[Full report (PDF)](report/rapport_SPS.pdf)** · **[5-minute video](https://youtu.be/-38HqgtiEek)**
 
 [![Watch the 5-minute presentation](https://img.youtube.com/vi/-38HqgtiEek/maxresdefault.jpg)](https://youtu.be/-38HqgtiEek)
 
@@ -16,7 +16,7 @@ Parkinson's disease is followed with the MDS-UPDRS motor score (part III). The s
 
 ![RMSE of each kept experiment, from 16.48 for a constant prediction to 2.43 on the private leaderboard](report/figures/fig08_progress.png)
 
-*RMSE of every kept experiment (grouped 5-fold CV, log scale; 20 % patient holdout for the final model). The dashed line is the official private score. Details in [REPORT.md](REPORT.md#6-how-we-got-there-the-experiment-journey).*
+*RMSE of every kept experiment (grouped 5-fold CV, log scale; 20 % patient holdout for the final model). The dashed line is the official private score. Details in section 6 of the [report](report/rapport_SPS.pdf).*
 
 ## What made the difference
 
@@ -52,15 +52,17 @@ python experiments/25_blend.py report   # 80/20 patient holdout + Skore report
 python experiments/25_blend.py cv       # 5-fold grouped CV
 ```
 
-Data versions, Skore Hub credentials, caching and the earlier experiments: see [How to run in REPORT.md](REPORT.md#how-to-run).
+- **Data:** `25_blend.py` reads `data/`, or `data_new/` if it exists, and needs the current version of the files, with the `rater_id` column; it stops with an error otherwise.
+- **Skore Hub:** only the `report` step needs the key, read from a local `.skore` file (never committed) by `scripts/load_skore_credentials.py`.
+- **Earlier experiments (01 to 22):** `python experiments/NN_name.py` runs the grouped CV, pushes the Skore reports (key needed) and, for most, writes a submission; from experiment 10 on, `SMOKE_TEST=1` runs a quick check on 10 % of the patients without the key.
+- Experiments 01 to 21 used the first version of the files, so their scores cannot be reproduced exactly; from 12 on, each also reads the out-of-fold predictions of an earlier one from `audit/` (not included).
 
 ## Repository
 
 | Path | Content |
 |---|---|
 | `experiments/` | One script per experiment, from `01_dummy.py` to `25_blend.py` (final model) |
-| `REPORT.md` | Full report: data, method, experiments, error analysis |
-| `report/` | The report as a PDF (`rapport_SPS.pdf`) and its figures |
+| `report/` | The full report as a PDF (`rapport_SPS.pdf`: data, method, experiments, error analysis) and its figures |
 | `data/` | Day 1 exploratory analysis (`eda.py`, `eda.md`); the competition CSV files go here |
 | `scripts/` | `load_skore_credentials.py`, the Skore Hub sign-in helper |
 | `requirements.txt` | Python packages, with the versions we used |

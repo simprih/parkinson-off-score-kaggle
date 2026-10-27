@@ -5,11 +5,11 @@
 # **Idea:** Patient-specific drug-response factor (ON = OFF − r_i × effect(dose, time)).
 # **CV (GroupKFold 5):** not scored
 # The drug-response idea evolved into the E-model used from experiment 18 onwards.
-# **Skore Hub:** report keys `06_response_A`, `06_response_B`, `06_response_final` (ids not listed in the README).
+# **Skore Hub:** report keys `06_response_A`, `06_response_B`, `06_response_final` (ids not listed in the report).
 # **Run:** `python experiments/06_response.py`
 # (Windows: `.venv\Scripts\python.exe -X utf8 -u experiments/06_response.py`).
 # Reads data/ (first version of the files, before 9 October); needs the Skore key (.skore),
-# see README, How to run.
+# see the report (report/rapport_SPS.pdf), How to run.
 
 # %%
 from pathlib import Path

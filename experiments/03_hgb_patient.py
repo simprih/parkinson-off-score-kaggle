@@ -5,11 +5,11 @@
 # **Idea:** Add per-patient off/on mean and trend features to 02_hgb.
 # **CV (GroupKFold 5):** 4.26
 # Large drop from 7.36 shows that patient-level aggregates carry most of the signal.
-# **Skore Hub:** report key `03_hgb_patient` (id not listed in the README).
+# **Skore Hub:** report key `03_hgb_patient` (id not listed in the report).
 # **Run:** `python experiments/03_hgb_patient.py`
 # (Windows: `.venv\Scripts\python.exe -X utf8 -u experiments/03_hgb_patient.py`).
 # Reads data/ (first version of the files, before 9 October); needs the Skore key (.skore),
-# see README, How to run.
+# see the report (report/rapport_SPS.pdf), How to run.
 
 # %%
 from pathlib import Path

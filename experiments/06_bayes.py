@@ -5,11 +5,11 @@
 # **Idea:** Shrunk per-patient OLS line via empirical Bayes (EmpiricalBayesLine).
 # **CV (GroupKFold 5):** not scored
 # The posterior line feature was partially absorbed into MixedLine (experiment 07).
-# **Skore Hub:** report keys `06_bayes_A`, `06_bayes_B`, `06_bayes_final` (ids not listed in the README).
+# **Skore Hub:** report keys `06_bayes_A`, `06_bayes_B`, `06_bayes_final` (ids not listed in the report).
 # **Run:** `python experiments/06_bayes.py`
 # (Windows: `.venv\Scripts\python.exe -X utf8 -u experiments/06_bayes.py`).
 # Reads data/ (first version of the files, before 9 October); needs the Skore key (.skore),
-# see README, How to run.
+# see the report (report/rapport_SPS.pdf), How to run.
 
 # %%
 from pathlib import Path

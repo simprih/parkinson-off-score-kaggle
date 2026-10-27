@@ -11,7 +11,7 @@
 # **Run:** `python experiments/07_mixed.py`
 # (Windows: `.venv\Scripts\python.exe -X utf8 -u experiments/07_mixed.py`).
 # Reads data/ (first version of the files, before 9 October); needs the Skore key (.skore),
-# see README, How to run.
+# see the report (report/rapport_SPS.pdf), How to run.
 
 # %%
 from pathlib import Path

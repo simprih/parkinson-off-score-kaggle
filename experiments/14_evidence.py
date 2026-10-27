@@ -18,7 +18,7 @@
 # **Run:** `python experiments/14_evidence.py`
 # (Windows: `.venv\Scripts\python.exe -X utf8 -u experiments/14_evidence.py`).
 # Reads data/ (first version of the files, before 9 October) and audit/oof_13.csv; needs the
-# Skore key (.skore), see README, How to run.
+# Skore key (.skore), see the report (report/rapport_SPS.pdf), How to run.
 # `SMOKE_TEST=1`: 10 % of the patients, 2 folds, nothing saved or pushed (no Skore key needed).
 
 # %%

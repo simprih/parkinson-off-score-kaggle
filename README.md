@@ -6,6 +6,10 @@
 
 **17th on the private leaderboard** of the Kaggle competition `bobathon-esilv`, with an RMSE of **2.43** against 16.48 for the reference (a constant prediction), and **up 7 places** from the public to the private leaderboard.
 
+[![Watch the 5-minute presentation](https://img.youtube.com/vi/-38HqgtiEek/maxresdefault.jpg)](https://youtu.be/-38HqgtiEek)
+
+🎥 [5-minute video presentation](https://youtu.be/-38HqgtiEek)
+
 **Team SPS:** Simon Prihnenko, Pierre Rancon, Sacha Audouy · Bobathon ESILV × IBM × Probabl, October 2026 · built on the course repository [probabl-ai/bobathon-esilv](https://github.com/probabl-ai/bobathon-esilv).
 
 **Full report:** [report/rapport_SPS.pdf](report/rapport_SPS.pdf) (PDF, 21 pages).

@@ -26,7 +26,7 @@
 
 **Team and roles.** We worked as a relay. Simon set up the environment and ran the first experiments (up to 08); Sacha found that the highest OFF values are the most reliable (10) and rebuilt the pipeline without leakage (11); Pierre ran experiments 12 to 22, then the final model, which combines Simon's specification (variant A) and Sacha's variant B, and made the submissions.
 
-**Summary.** For every visit of a Parkinson's patient, we predict the true OFF motor score (MDS-UPDRS part III) from noisy ON and OFF measurements. We treated it as a measurement problem: each patient follows a smooth disease curve, and every score we see is a biased, noisy view of that curve. The final model removes the bias of each rater, converts ON scores to the OFF scale with a drug-effect model estimated per patient, combines all the measurements of a patient through a likelihood that uses the real shape of the noise, and corrects a first estimate with a second gradient-boosting stage before projecting each patient onto a non-decreasing curve. It scored 2.430 on the official leaderboard (17th place), against 16.48 for a constant prediction.
+**Summary.** For every visit of a Parkinson's patient, we predict the true OFF motor score (MDS-UPDRS part III) from noisy ON and OFF measurements. We treated it as a measurement problem: each patient follows a smooth disease curve, and every score we see is a biased, noisy view of that curve. The final model removes the bias of each rater, converts ON scores to the OFF scale with a drug-effect model estimated per patient, combines all the measurements of a patient through a likelihood that uses the real shape of the noise, and corrects a first estimate with a second gradient-boosting stage before projecting each patient onto a non-decreasing curve. It scored 2.430 on the official leaderboard (17th of 294 teams), against 16.48 for a constant prediction.
 
 | | RMSE |
 |---|---|
@@ -35,7 +35,7 @@
 | Previous version of the final model (exp 22), same 20 % patient holdout | 2.76 |
 | Final model (exp 25), 20 % patient holdout | 2.678 |
 | Kaggle public leaderboard (about 30 % of the test patients) | 2.799 |
-| **Kaggle private leaderboard (official, about 70 %)** | **2.430, 17th place** |
+| **Kaggle private leaderboard (official, about 70 %)** | **2.430, 17th of 294 teams** |
 
 Final code: `experiments/25_blend.py`. Skore Hub report of the submitted model: https://skore.probabl.ai/sps/bobathon-esilv/estimators/85087 (on the team's private Skore Hub workspace, so the link requires access).
 
@@ -338,7 +338,7 @@ The full CV of experiment 25 takes several hours and could not be run before the
 
 ### 7.2 Public and private leaderboards
 
-Our public score (2.799) was a little worse than our holdout (2.678), as for every previous model: the public board covers few patients and its error is noisy. On the private board, 70 % of the test patients, the same model scored 2.430 and we moved up 7 places, to 17th, 0.004 behind the 16th team, while some teams that had made many submissions to climb the public board lost up to 11 places. We read this as a confirmation that the grouped validation measured what the leaderboard measures.
+Our public score (2.799) was a little worse than our holdout (2.678), as for every previous model: the public board covers few patients and its error is noisy. On the private board, 70 % of the test patients, the same model scored 2.430 and we moved up 7 places, to 17th of 294 teams, 0.004 behind the 16th team, while some teams that had made many submissions to climb the public board lost up to 11 places. We read this as a confirmation that the grouped validation measured what the leaderboard measures.
 
 ### 7.3 Where the error remains
 

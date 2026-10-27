@@ -2,9 +2,9 @@
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![scikit-learn 1.9](https://img.shields.io/badge/scikit--learn-1.9-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
-[![Kaggle: 17th on the private leaderboard](https://img.shields.io/badge/Kaggle-17th%20private%20LB-20BEFF?logo=kaggle&logoColor=white)](#results)
+[![Kaggle: 17th of 294 on the private leaderboard](https://img.shields.io/badge/Kaggle-17th%20%2F%20294%20private%20LB-20BEFF?logo=kaggle&logoColor=white)](#results)
 
-**17th on the private leaderboard** of the Kaggle competition `bobathon-esilv`, with an RMSE of **2.43** against 16.48 for the reference (a constant prediction), and **up 7 places** from the public to the private leaderboard.
+**17th of 294 teams (top 6 %) on the private leaderboard** of the Kaggle competition `bobathon-esilv`, with an RMSE of **2.43** against 16.48 for the reference (a constant prediction), and **up 7 places** from the public to the private leaderboard.
 
 **[Full report (Markdown)](REPORT.md)** · **[PDF](report/rapport_SPS.pdf)** · **[🎥 5-minute video presentation](https://youtu.be/-38HqgtiEek)**
 
@@ -35,7 +35,7 @@ Every large gain came from describing how the measurements are produced, not fro
 | First real model, HistGradientBoosting on the raw columns | 7.36 |
 | Final model (exp 25), 20 % patient holdout | 2.678 |
 | Kaggle public leaderboard (about 30 % of the test patients) | 2.799 |
-| **Kaggle private leaderboard (official, about 70 %)** | **2.430, 17th place** |
+| **Kaggle private leaderboard (official, about 70 %)** | **2.430, 17th of 294** |
 
 ## How to run
 

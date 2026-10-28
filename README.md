@@ -1,5 +1,7 @@
 # Seeing through the noise: recovering the true Parkinson's motor score
 
+[Pierre Rancon](https://github.com/Pierre-gfp)
+
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![scikit-learn 1.9](https://img.shields.io/badge/scikit--learn-1.9-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
 [![Kaggle: 17th of 294 on the private leaderboard](https://img.shields.io/badge/Kaggle-17th%20%2F%20294%20private%20LB-20BEFF?logo=kaggle&logoColor=white)](#results)
